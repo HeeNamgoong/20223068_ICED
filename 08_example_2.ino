@@ -41,11 +41,9 @@ void loop() {
 
   if (distance < _DIST_MIN) {
     distance = prev;    // Set Lower Value
-    prev = distance;
     digitalWrite(PIN_LED, 1) ;       // LED OFF
   } else if (distance > _DIST_MAX) {
     distance = prev;    // Set Lower Value
-    prev = distance;
     digitalWrite(PIN_LED, 1);       // LED OFF
 
   } else {    // In desired Range
